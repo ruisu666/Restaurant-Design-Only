@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<title>Sign Up</title>
+	<style>
+		* {box-sizing: border-box;}
+		@media screen and (max-width: 500px) {
+		  .header a {
+		    float: none;
+		    display: block;
+		    text-align: left;}
+  }
+	</style>
+</head>
+<body class= "w3-serif">
+				<!--Navigation Fullpage-->
+<div class="w3-top">
+	<div class="w3-bar w3-black w3-card w3-left-align w3-large w3-padding">
+	<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black" href="javascript:void(0);" onclick="myBurger()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+		  <a href="#" class="w3-bar-item w3-button w3-hover-black w3-lagre "><h4>Mangan Resto Bar</h4></a>
+		  <a href="home.html" class="w3-hide-small w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-none w3-hover-text-white w3-border-black w3-bottombar w3-hover-border-white "><h4>Home</h4></a>
+		  <a href="gallery.html" class="w3-hide-small w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white"><h4>Gallery</h4></a>
+		  <a href="menu.html" class="w3-hide-small w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white"><h4>Menu</h4></a>
+		  <a href="service.html" class="w3-hide-small w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white"><h4>Service</h4></a>
+		  <a href="booktable.html" class="w3-hide-small w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white "><h4>Book a Table</h4></a>
+		  <div class="w3-dropdown-click w3-hide-small">
+		    <button onclick="myFunction()" class=" w3-button w3-black"><h4>More</h4></button>
+		    <div class="w3-dropdown-content w3-bar-block w3-card-4" id="Demo">
+		      <a href="about.html" class=" w3-bar-item w3-button"><h4>About Us</h4></a>
+		      <a href="contact.html" class=" w3-bar-item w3-button"><h4>Contact Us</h4></a>
+		      <a href="developer.html" class=" w3-bar-item w3-button"><h4>Developer</h4></a>
+		  </div>
+    		</div>
+			<a href="login.html" class="w3-dark-gray w3-hide-small w3-bar-item w3-button w3-green w3-right w3-margin-right w3-margin-left w3-margin-top" style="border-radius:20px;">Log In<svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="white" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+				<path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+				<path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/></svg></a>
+			<a href="signup.html" class="w3-dark-gray w3-hide-small w3-bar-item w3-button w3-green w3-right  w3-margin-left w3-margin" style="border-radius:20px">Sign Up<svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="white" class="bi bi-person-circle" viewBox="0 0 16 16">
+					<path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+					<path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+				  </svg></i></a>
+	</div>
+	<!--Navigation Phone-->
+	<div id="burger" class="header w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large ">
+	     <a href="home.html" class="w3-bar-item w3-button w3-padding-medium"><h4>Home</h4></a>
+		  <a href="gallery.html" class="w3-bar-item w3-button w3-padding-medium"><h4>Gallery</h4></a>
+		  <a href="menu.html" class="w3-bar-item w3-button w3-padding-medium"><h4>Menu</h4></a>
+		  <a href="service.html" class="w3-bar-item w3-button w3-padding-medium"><h4>Service</h4></a>
+		  <a href="booktable.html" class="w3-bar-item w3-button w3-padding-medium"><h4>Book a Table</h4></a>
+		  <a href="about.html" class="w3-bar-item w3-button w3-padding-medium"><h4>About Us</h4></a>
+		  <a href="contact.html" class="w3-bar-item w3-button w3-padding-medium"><h4>Contact Us</h4></a>
+		  <a href="developer.html" class="w3-bar-item w3-button w3-padding-medium"><h4>Developer</h4></a>
+		  <a href="login.html" class=" w3-bar-item w3-button w3-padding-medium ">Log In</a>
+		  <a href="signup.html" class=" w3-bar-item w3-button w3-padding-medium w3-gray">Sign Up</a>
+	</div>
+</div>
+
+			<!-- sign up -->
+
+			<div class="w3-card-4" style="padding-top:200px; padding-bottom:50px; margin-bottom:100px;" id="shide">
+
+				<div class="w3-container w3-blue-grey">
+				  <h2>Create Account</h2>
+				</div>
+
+				<form class="w3-container">
+
+				<label>First Name</label>
+				<input type="text" id="input1" class="w3-input" placeholder="Enter your First name">
+				<label>Last Name</label>
+				<input type="text" id="input2" class="w3-input" placeholder="Enter your Last Name">
+				<label>Email</label>
+				<input type="email" id="input3" class="w3-input" placeholder="Enter your Email to register">
+				<label>Birthday</label>
+				<input type="date" id="input3" class="w3-input" placeholder="Enter your Birthday">
+				<label>Age</label>
+				<input type="number" id="input3" class="w3-input" placeholder="Enter your Age">
+				<label>Create Password</label>
+				<input type="password" id="input4" class="w3-input" placeholder="Create your Password"><br>
+				<input type="password" id="input5" class="w3-input"  placeholder="Repeat your Password to confirm"><br>
+				<input type="submit" class="w3-btn w3-dark-gray w3-center" value="Sign Up" onclick="hidee()">
+				<p class="w3-center">Already have account? <a href="login.html">Log In</a></p>
+			</form>
+		</div>
+				<!-- <div class="w3-card-4 w3-sand " id="sview" style="padding-top:125px; padding-bottom:125px; margin-top: 170px;">
+				<h1><p id="para1"></p></h1><br>
+				<h3><p id="para2"></p></h3><br>
+				<h3><p id="para3"></p></h3><br>
+				</div> -->
+
+
+	<script>
+	function myFunction() {
+	  var x = document.getElementById("Demo");
+	  if (x.className.indexOf("w3-show") == -1) { 
+	    x.className += " w3-show";
+	  } else {
+	    x.className = x.className.replace(" w3-show", "");}
+		}
+
+		function myBurger() {
+	  var x = document.getElementById("burger");
+	  if (x.className.indexOf("w3-show") == -1) { 
+	    x.className += " w3-show";
+	  } else {
+	    x.className = x.className.replace(" w3-show", "");
+  		}
+		}
+
+// function hidee(){
+		// 	let fname = document.getElementById("input1").value;
+		// 	let lname = document.getElementById("input2").value;
+		// 	let email = document.getElementById("input3").value;
+		// 	document.getElementById("shide").style.display='none';
+		// 	document.getElementById("sview").style.display='block';
+		// 	document.getElementById("para1").innerHTML = "Congrats you Succesfully create account!";
+		// 	document.getElementById("para2").innerHTML = "Use " + input1 " " + input2 + " as your login Info and your Email is " + input3 ;
+		// 	// document.getElementById("para3").innerHTML = " and your Email is " + input3;
+		// }
+
+</script>
+</body>
+</html>

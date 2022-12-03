@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<title></title>
+	<style>
+		* {box-sizing: border-box;}
+		@media screen and (max-width: 500px) {
+		  .header a {
+		    float: none;
+		    display: block;
+		    text-align: left;}
+  }
+	</style>
+</head>
+<body class= "w3-serif">
+				<!--Navigation Fullpage-->
+<div class="w3-top">
+	<div class="w3-bar w3-black w3-card w3-left-align w3-large w3-padding">
+	<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black" href="javascript:void(0);" onclick="myBurger()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+	<a href="#" class=" w3-mobile w3-bar-item w3-button w3-hover-black w3-large w3-hide-small"><img src="images/ManganNav1.png" style="height: 40px; width: 80px"> </a>
+		  <a href="home.html" class="w3-hide-small w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-none w3-hover-text-white w3-border-black w3-bottombar w3-hover-border-white "><h4>Home</h4></a>
+		  <a href="gallery.html" class="w3-hide-small w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white"><h4>Gallery</h4></a>
+		  <a href="menu.html" class="w3-hide-small w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white"><h4>Menu</h4></a>
+		  <a href="service.html" class="w3-hide-small w3-bar-item w3-button w3-hover-none w3-text-white w3-hover-text-white w3-hover-text-white w3-gray w3-round-xlarge"><h4>Service</h4></a>
+		  <a href="booktable.html" class="w3-hide-small w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white"><h4>Book a Table</h4></a>
+		  <div class="w3-dropdown-click w3-hide-small">
+		    <button onclick="myFunction()" class=" w3-button w3-black"><h4>More</h4></button>
+		    <div class="w3-dropdown-content w3-bar-block w3-card-4" id="Demo">
+		      <a href="about.html" class=" w3-bar-item w3-button"><h4>About Us</h4></a>
+		      <a href="contact.html" class=" w3-bar-item w3-button"><h4>Contact Us</h4></a>
+		      <a href="developer.html" class=" w3-bar-item w3-button"><h4>Developer</h4></a>
+		  </div>
+    		</div>
+			<a href="login.html" class="w3-dark-gray w3-hide-small w3-bar-item w3-button w3-green w3-right w3-margin-right w3-margin-left w3-margin-top" style="border-radius:20px;">Log In<svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="white" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+				<path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+				<path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/></svg></a>
+			<a href="signup.html" class="w3-dark-gray w3-hide-small w3-bar-item w3-button w3-green w3-right  w3-margin-left w3-margin" style="border-radius:20px">Sign Up<svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="white" class="bi bi-person-circle" viewBox="0 0 16 16">
+					<path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+					<path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+				  </svg></i></a>
+	</div>
+	<!--Navigation Phone-->
+	<div id="burger" class="header w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large ">
+		<a href="home.html" class="w3-bar-item w3-button w3-padding-medium"><h4>Home</h4></a>
+		  <a href="gallery.html" class="w3-bar-item w3-button w3-padding-medium"><h4>Gallery</h4></a>
+		  <a href="menu.html" class="w3-bar-item w3-button w3-padding-medium"><h4>Menu</h4></a>
+		  <a href="service.html" class="w3-bar-item w3-button w3-padding-medium w3-gray"><h4>Service</h4></a>
+		  <a href="booktable.html" class="w3-bar-item w3-button w3-padding-medium"><h4>Book a Table</h4></a>
+		  <a href="about.html" class="w3-bar-item w3-button w3-padding-medium"><h4>About Us</h4></a>
+		  <a href="contact.html" class="w3-bar-item w3-button w3-padding-medium"><h4>Contact Us</h4></a>
+		  <a href="developer.html" class="w3-bar-item w3-button w3-padding-medium"><h4>Developer</h4></a>
+		  <a href="login.html" class=" w3-bar-item w3-button w3-padding-medium ">Log In</a>
+		  <a href="signup.html" class=" w3-bar-item w3-button w3-padding-medium">Sign Up</a>
+	</div>
+	<!-- body of services -->
+	<h1 class="w3-center w3-xxxlarge w3-bold"> WHAT YOU'LL GET </h1>
+	<div class="w3-container w3-center w3-margin-right w3-margin-left">
+		</br>
+		<table class="w3-table w3-hoverable w3-hover-silver w3-responsive">
+			<tr>
+				<th>
+					<img name="Family" src="services/heart.png">
+				</th>
+				<th>
+					<p class="w3-xxlarge w3-hover-text-red">FAMILY</p>
+					<p class="w3-large">We are a hardworking team that understands a common goal to treat our guests, co-workers and the community with integrity, sincerity, and passion.</p> </br></br>
+				</th>
+			</tr>
+			<tr>
+				<th>
+					<img name="Quality Food" src="services/quality.png">
+				</th>
+				<th>
+					<p class="w3-xxlarge w3-hover-text-purple">QUALITY</p>
+					<p class="w3-large">With food that stems from our Filipino culture, we guarantee the best quality of ingredients that is fresh and ready to cook!</p> </br></br>
+				</th>
+			</tr>
+			<tr>
+				<th>
+					<img name="Customer Service" src="services/customer.png">
+				</th>
+				<th>
+					<p class="w3-xxlarge w3-hover-text-blue">CUSTOMER FOCUS</p>
+					<p class="w3-large">Our top priority is to ensure over-the-top service to keep our customers happy. To provide them with care and satisfy their needs.</p> </br></br>
+				</th>
+			</tr>
+		</table>
+	</div>
+</div>
+
+	<script>
+	function myFunction() {
+	  var x = document.getElementById("Demo");
+	  if (x.className.indexOf("w3-show") == -1) { 
+	    x.className += " w3-show";
+	  } else {
+	    x.className = x.className.replace(" w3-show", "");
+  		}
+		}
+
+		function myBurger() {
+	  var x = document.getElementById("burger");
+	  if (x.className.indexOf("w3-show") == -1) { 
+	    x.className += " w3-show";
+	  } else {
+	    x.className = x.className.replace(" w3-show", "");
+  		}
+		}
+</script>
+
+</body>
+</html>
