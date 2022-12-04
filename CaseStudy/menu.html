@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mangan Resto Bar</title>
+	<link rel="icon" href="images/ManganLogo.ico">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<title>Menu</title>
+	<style>
+		* {box-sizing: border-box;}
+		@media screen and (max-width: 500px) {
+		  .header a {
+		    float: none;
+		    display: block;
+		    text-align: left;}
+  }
+		  .bg-img {
+		  	background-image: url('images/menucover.jpg');
+		  	background-size: cover;
+		  	background-repeat: no-repeat;
+		  	background-attachment: fixed;
+		  	background-position: center top;
+			}  
+	</style>
+</head>
+<body class= "w3-serif">
+	<!--Navigation Fullpage-->
+<div class="w3-top">
+	<div class="w3-bar w3-black w3-card w3-left-align w3-large w3-padding">
+	<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black" href="javascript:void(0);" onclick="myBurger()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+	<a href="#" class=" w3-mobile w3-bar-item w3-button w3-hover-black w3-large w3-hide-small"><img src="images/ManganNav1.png" style="height: 40px; width: 80px"> </a>
+		  <a href="home.html" class="w3-hide-small w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-none w3-hover-text-white w3-border-black w3-bottombar w3-hover-border-white "><h4>Home</h4></a>
+		  <a href="gallery.html" class="w3-hide-small w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white"><h4>Gallery</h4></a>
+		  <a href="menu.html" class="w3-hide-small w3-bar-item w3-button w3-hover-none w3-text-white w3-hover-text-white w3-gray w3-round-xlarge"><h4>Menu</h4></a>
+		  <a href="service.html" class="w3-hide-small w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white"><h4>Service</h4></a>
+		  <a href="booktable.html" class="w3-hide-small w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white"><h4>Book a Table</h4></a>
+		  <div class="w3-dropdown-click w3-hide-small">
+		    <button onclick="myFunction()" class=" w3-button w3-black"><h4>More</h4></button>
+		    <div class="w3-dropdown-content w3-bar-block w3-card-4" id="Demo">
+		      <a href="about.html" class=" w3-bar-item w3-button"><h4>About Us</h4></a>
+		      <a href="contact.html" class=" w3-bar-item w3-button"><h4>Contact Us</h4></a>
+		      <a href="developer.html" class=" w3-bar-item w3-button"><h4>Developer</h4></a>
+		  </div>
+    		</div>
+			<a href="login.html" class="w3-dark-gray w3-hide-small w3-bar-item w3-button w3-green w3-right w3-margin-right w3-margin-left w3-margin-top" style="border-radius:20px;">Log In<svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="white" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+				<path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+				<path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/></svg></a>
+			<a href="signup.html" class="w3-dark-gray w3-hide-small w3-bar-item w3-button w3-green w3-right  w3-margin-left w3-margin" style="border-radius:20px">Sign Up<svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="white" class="bi bi-person-circle" viewBox="0 0 16 16">
+					<path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+					<path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+				  </svg></i></a>
+	</div>
+	<!--Navigation Phone-->
+	<div id="burger" class="header w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large ">
+		<a href="home.html" class="w3-bar-item w3-button w3-padding-medium"><h4>Home</h4></a>
+		  <a href="gallery.html" class="w3-bar-item w3-button w3-padding-medium"><h4>Gallery</h4></a>
+		  <a href="menu.html" class="w3-bar-item w3-button w3-padding-medium w3-gray"><h4>Menu</h4></a>
+		  <a href="service.html" class="w3-bar-item w3-button w3-padding-medium"><h4>Service</h4></a>
+		  <a href="booktable.html" class="w3-bar-item w3-button w3-padding-medium"><h4>Book a Table</h4></a>
+		  <a href="about.html" class="w3-bar-item w3-button w3-padding-medium"><h4>About Us</h4></a>
+		  <a href="contact.html" class="w3-bar-item w3-button w3-padding-medium"><h4>Contact Us</h4></a>
+		  <a href="developer.html" class="w3-bar-item w3-button w3-padding-medium"><h4>Developer</h4></a>
+		  <a href="login.html" class=" w3-bar-item w3-button w3-padding-medium ">Log In</a>
+		  <a href="signup.html" class=" w3-bar-item w3-button w3-padding-medium">Sign Up</a>
+	</div>
+</div>
+			<!-- Menu Container -->
+<div class="w3-container w3-white w3-padding-64 w3-xxlarge bg-img" id="menu">
+  <div class="w3-content">
+  	</br>
+    <h1 class="w3-center w3-jumbo w3-black w3-text-white" style="margin-bottom:64px">THE MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Meal');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-gray w3-black w3-text-white w3-xxlarge" style="font-size: 20px;">Meal</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-gray w3-black w3-text-white w3-xxlarge" style="font-size: 20px;">Drinks</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Dessert');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-gray w3-black w3-text-white w3-xxlarge" style="font-size: 20px;">Dessert</div>
+      </a>
+    </div>
+
+    <div id="Meal" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Sisig</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₱100.00</span></h1>
+      <p class="w3-text-grey" style="font-size: 20px;">Sisig is originally from Angeles City, and Luciana Cunanan (aka Aling Lucing) was the one who invented the dish. Sisig is made mostly from pig’s head. The meat is boiled, grilled and fried before putting it on a sizzling plate and after slicing it in bits.</p>
+      <hr>
+   
+      <h1><b>Pindang Kalabaw</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₱75.50</span></h1>
+      <p class="w3-text-grey" style="font-size: 20px;">Kapampangans cook tocino by adding a little water (just enough to cover the meat) and cooking oil. The meat is cooked until it turns reddish brown. The locals eat pindang kalabaw with sukang sasa, which you should certainly try once you embark on a Pampanga food trip.</p>
+      <hr>
+      
+      <h1><b>Adobong Kamaru</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₱85.00</span></h1>
+      <p class="w3-text-grey" style="font-size: 20px;">Kamaru is cooked like ordinary adobo using sukang sasa. However, some locals enjoy the exotic food when it is braised with tomatoes and vinegar before sautéing them.</p>
+      <hr>
+
+      <h1><b>Bringhe</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₱120.50</span></h1>
+      <p class="w3-text-grey" style="font-size: 20px;">Bringhe is a rice dish. Bringhe is usually cooked with luyang dilaw (turmeric) and gata (coconut milk). The dish is topped with carrots, bell peppers and boiled eggs. Sometimes, chicken leg quarters are put in the middle as topping as well.</p>
+      <hr>
+
+      <h1><b>Murcon</b> <span class="w3-tag w3-red w3-round" style="border-radius: 20px; font-size: 50%;">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">₱150.00</span></h1>
+      <p class="w3-text-grey" style="font-size: 20px;">Murcon is like embotido, but this Kapampangan embotido combines ground pork and ground beef. Chorizo de bilbao, and perhaps the addition of pimiento, is what makes morcon pungently tasty.</p>
+      <hr>
+
+      <h1><b>Buro or Baro-baro</b> <span class="w3-tag w3-grey w3-round" style="border-radius: 20px; font-size: 50%;">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">₱114.50</span></h1>
+      <p class="w3-text-grey" style="font-size: 20px;">Buro is typically mixed with shrimp or fish. Buro is best eaten with fried hito (catfish), mustasa (mustard leaves) or boiled vegetables such as eggplant and okra.</p>
+      <hr>
+      <h1><b>Rice </b> <span class="w3-tag w3-red w3-round" style="border-radius: 20px; font-size: 50%;">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">₱120.00</span></h1>
+      <p class="w3-text-grey" style="font-size: 20px;">One Kaldero of Rice</p>
+
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Red Horse 1L.</b> <span class="w3-tag w3-grey w3-round" style="border-radius: 20px; font-size: 50%;">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">₱175.00</span></h1>
+      <p class="w3-text-grey" style="font-size: 20px;">A strong, high alcohol beer. It is deeply hued lager with a distinctive, sweetish taste, balanced by a smooth bitterness. </p>
+      <hr>
+   
+      <h1><b>Black Coffee</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₱50.00</span></h1>
+      <p class="w3-text-grey" style="font-size: 20px;">Coffee is Life</p>
+      <hr>
+      
+      <h1><b>Mineral Water 1L.</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₱25.00</span></h1>
+      <p class="w3-text-grey" style="font-size: 20px;">Drink your water Bhiee</p>
+      <hr>
+
+      <h1><b>Ice Tea</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₱50.00</span></h1>
+      <p class="w3-text-grey" style="font-size: 20px;">Stay Fresh and hydrated</p>
+      <hr>
+
+      <h1><b>Pineapple Juice</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₱30.00</span></h1>
+      <p class="w3-text-grey" style="font-size: 20px;">Anti HighBlood and Colesterol</p>
+      <hr>
+
+      <h1><b>Water</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Free</span></h1>
+      <p class="w3-text-grey" style="font-size: 20px;">1 Pitcher or Water</p>
+
+    </div>
+
+
+    <div id="Dessert" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Halo-Halo</b><span class="w3-right w3-tag w3-dark-grey w3-round">₱50.00</span></h1>
+      <p class="w3-text-grey" style="font-size: 20px;">Halo-halo, which means ‘mixed’ in English, is made from sweetened ingredients poured into the glass bottom before putting the crushed ice above them. Leche flan, ube halaya or both is placed at the top after pouring carabao’s milk generously.</p>
+      <hr>
+   
+      <h1><b>Tibuk-tibuk Bilao</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₱120.00</span></h1>
+      <p class="w3-text-grey" style="font-size: 20px;">Tibuk-tibuk is one of Kapampangan’s best-tasting desserts. Tibuk-tibuk is made from carabao’s milk and has a latik on top. A hint of dayap zest (local lemon) is added.</p>
+      <hr>
+      
+      <h1><b>Panecillo de San Nicolas</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₱45.00</span></h1>
+      <p class="w3-text-grey" style="font-size: 20px;">This Pampangan cookie is made using a very few ingredients. What makes the panecillos special is its intricate design. A hand-carved mold of San Nicolas is used in making the cookie. The cookies are best-served with hot coffee and chocolate de batirol.</p>
+      <hr>
+      
+      <h1><b>Turoness de Causy</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₱35.00</span></h1>
+      <p class="w3-text-grey" style="font-size: 20px;">Turrones de casuy is like nougat-like delicacy made from chopped cashew nuts. The turrones is wrapped in edible paper-thin wafer.</p>
+
+      <h1><b>Bibingka</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₱75.00</span></h1>
+      <p class="w3-text-grey" style="font-size: 20px;">BIbing ka is a type of rice cake native to the Philippines. This is traditionally made from galapong, coconut milk, margarine, and sugar.</p>
+    </div><br>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+	<script>
+	function myFunction() {
+	  var x = document.getElementById("Demo");
+	  if (x.className.indexOf("w3-show") == -1) { 
+	    x.className += " w3-show";
+	  } else {
+	    x.className = x.className.replace(" w3-show", "");
+  		}
+		}
+
+
+		function myBurger() {
+	  var x = document.getElementById("burger");
+	  if (x.className.indexOf("w3-show") == -1) { 
+	    x.className += " w3-show";
+	  } else {
+	    x.className = x.className.replace(" w3-show", "");
+  		}
+		}
+
+		// Tabbed Menu
+		function openMenu(evt, menuName) {
+		  var i, x, tablinks;
+		  x = document.getElementsByClassName("menu");
+		  for (i = 0; i < x.length; i++) {
+		     x[i].style.display = "none";
+		  }
+		  tablinks = document.getElementsByClassName("tablink");
+		  for (i = 0; i < x.length; i++) {
+		     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+		  }
+		  document.getElementById(menuName).style.display = "block";
+		  evt.currentTarget.firstElementChild.className += " w3-red";
+		}
+		document.getElementById("myLink").click();
+</script>
+</body>
+</html>

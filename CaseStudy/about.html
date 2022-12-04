@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mangan Resto Bar</title>
+	<link rel="icon" href="images/ManganLogo.ico">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<title></title>
+	<style>
+		* {box-sizing: border-box;}
+		@media screen and (max-width: 500px) {
+		  .header a {
+		    float: none;
+		    display: block;
+		    text-align: left;}
+  		}
+
+		.bg-img {
+		  background-image: url('images/about_image.png');
+		  background-repeat: no-repeat;
+		  background-attachment: fixed;
+		  background-position: center top;
+		}
+
+	</style>
+</head>
+<body class= "w3-serif">
+	<!--Navigation Fullpage-->
+<div class="w3-top">
+	<div class="w3-bar w3-black w3-card w3-left-align w3-large w3-padding">
+	<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black" href="javascript:void(0);" onclick="myBurger()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+	<a href="#" class=" w3-mobile w3-bar-item w3-button w3-hover-black w3-large w3-hide-small"><img src="images/ManganNav1.png" style="height: 40px; width: 80px"> </a>
+		  <a href="home.html" class="w3-hide-small w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-none w3-hover-text-white w3-border-black w3-bottombar w3-hover-border-white "><h4>Home</h4></a>
+		  <a href="gallery.html" class="w3-hide-small w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white"><h4>Gallery</h4></a>
+		  <a href="menu.html" class="w3-hide-small w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white"><h4>Menu</h4></a>
+		  <a href="service.html" class="w3-hide-small w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white"><h4>Service</h4></a>
+		  <a href="booktable.html" class="w3-hide-small w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white"><h4>Book a Table</h4></a>
+		  <div class="w3-dropdown-click w3-hide-small">
+		    <button onclick="myFunction()" class=" w3-button w3-black"><h4>More</h4></button>
+		    <div class="w3-dropdown-content w3-bar-block w3-card-4" id="Demo">
+		      <a href="about.html" class=" w3-bar-item w3-button w3-gray"><h4>About Us</h4></a>
+		      <a href="contact.html" class=" w3-bar-item w3-button"><h4>Contact Us</h4></a>
+		      <a href="developer.html" class=" w3-bar-item w3-button"><h4>Developer</h4></a>
+		  </div>
+    		</div>
+			<a href="login.html" class="w3-dark-gray w3-hide-small w3-bar-item w3-button w3-green w3-right w3-margin-right w3-margin-left w3-margin-top" style="border-radius:20px;">Log In<svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="white" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+				<path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+				<path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/></svg></a>
+			<a href="signup.html" class="w3-dark-gray w3-hide-small w3-bar-item w3-button w3-green w3-right  w3-margin-left w3-margin" style="border-radius:20px">Sign Up<svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="white" class="bi bi-person-circle" viewBox="0 0 16 16">
+					<path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+					<path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+				  </svg></i></a>
+	</div>
+	<!--Navigation Phone-->
+	<div id="burger" class="header w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large ">
+		<a href="home.html" class="w3-bar-item w3-button w3-padding-medium"><h4>Home</h4></a>
+		  <a href="gallery.html" class="w3-bar-item w3-button w3-padding-medium"><h4>Gallery</h4></a>
+		  <a href="menu.html" class="w3-bar-item w3-button w3-padding-medium"><h4>Menu</h4></a>
+		  <a href="service.html" class="w3-bar-item w3-button w3-padding-medium"><h4>Service</h4></a>
+		  <a href="booktable.html" class="w3-bar-item w3-button w3-padding-medium w3-gray"><h4>Book a Table</h4></a>
+		  <a href="about.html" class="w3-bar-item w3-button w3-padding-medium"><h4>About Us</h4></a>
+		  <a href="contact.html" class="w3-bar-item w3-button w3-padding-medium"><h4>Contact Us</h4></a>
+		  <a href="developer.html" class="w3-bar-item w3-button w3-padding-medium"><h4>Developer</h4></a>
+		  <a href="login.html" class=" w3-bar-item w3-button w3-padding-medium ">Log In</a>
+		  <a href="signup.html" class=" w3-bar-item w3-button w3-padding-medium">Sign Up</a>
+	</div>
+	</div>
+	<!-- body of about -->
+	<div class="bg-img">
+		<header class="w3-text-white">
+			<div name="body" class=" w3-center w3-xxxlarge w3-bold">
+				</br></br></br>
+				<p>YOUR NEW FAVORITE RESTO BAR</p>
+			</div>
+			<div class=" w3-margin-top w3-center w3-xlarge w3-bold w3-margin-left w3-margin-right">
+				<p><a href="menu.html" class="w3-button w3-xlarge w3-black" style="border: gray; border-radius: 20px">Order now!</a></p>
+				</br></br></br></br></br>
+			</div>
+		</header>
+	</div>
+	</br></br></br>
+	<div>
+		<div name="body" class=" w3-center w3-xxxlarge w3-bold">
+			<p>ABOUT US</p>
+		</div>
+			<div name="para" class=" w3-margin-top w3-center w3-large w3-bold w3-margin-left w3-margin-right">
+				<p>MANGAN offers a collection of heirloom recipes dating as far back as 100 years. Their dishes are cooked through techniques handed down through generations, making for authentic Filipino flavors in every meal.</p>
+				</br></br></br>
+			</div>
+	</div>
+	<div class="w3-container w3-center w3-margin-right w3-margin-left">
+		<table class="w3-table w3-hoverable w3-hover-silver w3-responsive">
+			<tr>
+				<th>
+					<img src="images/about_food.jpg" style="width: 600px;">
+				</th>
+				<th>
+					</br></br></br>
+					<p class="w3-xxlarge w3-hover-text-red">The Menu</p>
+					<p class="w3-xlarge">With the menu containing a small but perfect list traditional Filipino <i> kampangan</i> cuisine, it is the perfect match for your favorite alcohol drink.</p> </br></br>
+				</th>
+			</tr>
+			<tr>
+				<th>
+					</br></br></br></br></br>
+					<p class="w3-xxlarge w3-hover-text-red">The Place</p>
+					<p class="w3-xlarge">Having an restaurant bar design, with the place filled with delicious alcohol, it truly sparks the right ambience for the exterior/interior design of the establishment. </p> </br></br>
+				</th>
+				<th>
+					<img src="images/about_place.jpg" style="width: 700px;">
+				</th>
+			</tr>
+			<tr>
+				<th>
+					<img src="images/about_service.jpg" style="width: 600px;">
+				</th>
+				<th>
+					</br></br></br>
+					<p class="w3-xxlarge w3-hover-text-red">The Catering</p>
+					<p class="w3-xlarge">With the staff giving their best to provide your needs, it is without a doubt one of the best customer services you will ever find.</p> </br></br>
+				</th>
+			</tr>
+		</table>
+	</div>
+	<script>
+	function myFunction() {
+	  var x = document.getElementById("Demo");
+	  if (x.className.indexOf("w3-show") == -1) { 
+	    x.className += " w3-show";
+	  } else {
+	    x.className = x.className.replace(" w3-show", "");
+  		}
+		}
+
+		function myBurger() {
+	  var x = document.getElementById("burger");
+	  if (x.className.indexOf("w3-show") == -1) { 
+	    x.className += " w3-show";
+	  } else {
+	    x.className = x.className.replace(" w3-show", "");
+  		}
+		}
+</script>
+</body>
+</html>
